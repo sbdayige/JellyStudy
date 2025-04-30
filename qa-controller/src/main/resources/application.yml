@@ -1,0 +1,22 @@
+logging:
+  level:
+    org.springframework.data.mongodb.core: DEBUG
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:123456@localhost:17017/JellyStudy?authSource=admin
+  ai:
+    dashscope:
+      api-key: sk-4cfdb9dbbc8c47c48a47b93d43bc5dc6
+dubbo:
+  application:
+    name: dubbo-qa-controller
+    qos-enable: false
+  registry:
+    address: nacos://localhost:8848
+  protocol:
+    name: dubbo
+    port: 20882
+  consumer:
+    check: false
+    timeout: 10000
