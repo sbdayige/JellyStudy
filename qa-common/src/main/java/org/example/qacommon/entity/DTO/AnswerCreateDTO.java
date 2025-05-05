@@ -1,5 +1,5 @@
 // AnswerCreateDTO.java
-package org.example.qaservice.entity.DTO;
+package org.example.qacommon.entity.DTO;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

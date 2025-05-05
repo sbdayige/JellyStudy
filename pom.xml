@@ -33,6 +33,7 @@
         <module>qa-controller</module>
         <module>kg-controller</module>
         <module>ai-controller</module>
+        <module>qa-common</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

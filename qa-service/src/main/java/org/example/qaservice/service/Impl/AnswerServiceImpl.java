@@ -10,12 +10,12 @@ import org.apache.dubbo.config.annotation.DubboService;
 import org.bson.types.ObjectId;
 import org.example.aiservice.service.AiEvaluationServiceForAw;
 import org.example.kgservice.repository.KnowledgePointRepository;
-import org.example.qaservice.entity.Answer;
-import org.example.qaservice.entity.DeletionResult;
-import org.example.qaservice.entity.Question;
-import org.example.qaservice.entity.User;
-import org.example.qaservice.entity.DTO.AnswerCreateDTO;
-import org.example.qaservice.entity.DTO.AnswerResponseDTO;
+import org.example.qacommon.entity.Answer;
+import org.example.qacommon.entity.DTO.AnswerCreateDTO;
+import org.example.qacommon.entity.DTO.AnswerResponseDTO;
+import org.example.qacommon.entity.DeletionResult;
+import org.example.qacommon.entity.Question;
+import org.example.qacommon.entity.User;
 import org.example.qaservice.repository.*;
 import org.example.qaservice.service.AnswerService;
 import org.springframework.data.domain.Sort;
@@ -26,8 +26,7 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

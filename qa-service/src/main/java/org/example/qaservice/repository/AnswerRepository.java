@@ -1,7 +1,7 @@
 package org.example.qaservice.repository;
 
 import org.bson.types.ObjectId;
-import org.example.qaservice.entity.Answer;
+import org.example.qacommon.entity.Answer;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

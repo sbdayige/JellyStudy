@@ -1,4 +1,4 @@
-package org.example.qaservice.entity;
+package org.example.qacommon.entity;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;

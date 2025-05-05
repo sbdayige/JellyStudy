@@ -1,9 +1,10 @@
 // AnswerService.java
 package org.example.qaservice.service;
 
-import org.example.qaservice.entity.DTO.AnswerCreateDTO;
-import org.example.qaservice.entity.DTO.AnswerResponseDTO;
-import org.example.qaservice.entity.DeletionResult;
+import org.example.qacommon.entity.DTO.AnswerCreateDTO;
+import org.example.qacommon.entity.DTO.AnswerResponseDTO;
+import org.example.qacommon.entity.DeletionResult;
+
 import java.util.List;
 
 public interface AnswerService {

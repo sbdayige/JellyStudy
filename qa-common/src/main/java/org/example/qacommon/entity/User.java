@@ -1,4 +1,4 @@
-package org.example.qaservice.entity;
+package org.example.qacommon.entity;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

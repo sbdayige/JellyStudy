@@ -1,11 +1,9 @@
 // filepath: c:\Users\guoshenshen\Desktop\study\yyjg\class8\code\qa-service\src\main\java\org\example\qaservice\entity\DTO\RecommendationDTO.java
-package org.example.qaservice.entity.DTO;
+package org.example.qacommon.entity.DTO;
 
 import lombok.Data;
-import org.example.qaservice.entity.Question; // 可以移除
 
 import java.io.Serializable;
-import java.util.List;
 
 @Data
 public class RecommendationDTO implements Serializable {

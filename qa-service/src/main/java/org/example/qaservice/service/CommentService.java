@@ -1,9 +1,7 @@
 package org.example.qaservice.service;
 
-import org.example.qaservice.entity.Comment;
-import org.example.qaservice.entity.DTO.CommentCreateDTO;
-import org.example.qaservice.entity.DTO.CommentResponseDTO;
-
+import org.example.qacommon.entity.DTO.CommentCreateDTO;
+import org.example.qacommon.entity.DTO.CommentResponseDTO;
 
 import java.util.List;
 

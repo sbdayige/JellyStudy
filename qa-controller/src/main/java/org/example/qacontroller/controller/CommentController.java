@@ -3,9 +3,8 @@ package org.example.qacontroller.controller;
 
 import jakarta.validation.Valid;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.example.qaservice.entity.Comment;
-import org.example.qaservice.entity.DTO.CommentCreateDTO;
-import org.example.qaservice.entity.DTO.CommentResponseDTO;
+import org.example.qacommon.entity.DTO.CommentCreateDTO;
+import org.example.qacommon.entity.DTO.CommentResponseDTO;
 import org.example.qaservice.service.CommentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

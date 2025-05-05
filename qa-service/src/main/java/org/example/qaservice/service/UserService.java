@@ -1,9 +1,8 @@
 package org.example.qaservice.service;
 
 
-import org.example.qaservice.entity.DTO.UserCreateDTO;
-import org.example.qaservice.entity.DTO.UserResponseDTO;
-import org.example.qaservice.entity.User;
+import org.example.qacommon.entity.DTO.UserCreateDTO;
+import org.example.qacommon.entity.DTO.UserResponseDTO;
 
 public interface UserService {
     UserResponseDTO createUser(UserCreateDTO userDTO);

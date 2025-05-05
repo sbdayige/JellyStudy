@@ -2,16 +2,13 @@ package org.example.qaservice.service.Impl;
 
 import org.apache.dubbo.config.annotation.DubboService;
 import org.bson.types.ObjectId;
-import org.example.qaservice.entity.DTO.UserCreateDTO;
-import org.example.qaservice.entity.DTO.UserResponseDTO;
-import org.example.qaservice.entity.User;
+import org.example.qacommon.entity.DTO.UserCreateDTO;
+import org.example.qacommon.entity.DTO.UserResponseDTO;
+import org.example.qacommon.entity.User;
 import org.example.qaservice.repository.UserRepository;
 import org.example.qaservice.service.UserService;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.Arrays;
 
 @DubboService
 public class UserServiceImpl implements UserService {

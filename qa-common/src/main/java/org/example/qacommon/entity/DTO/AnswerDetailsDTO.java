@@ -1,4 +1,4 @@
-package org.example.qaservice.entity.DTO;
+package org.example.qacommon.entity.DTO;
 
 import lombok.Data;
 import org.example.kgservice.entity.KnowledgePoint;

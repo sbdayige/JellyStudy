@@ -1,4 +1,3 @@
-// filepath: c:\Users\guoshenshen\Desktop\study\yyjg\class8\code\qa-service\src\main\java\org\example\qaservice\service\Impl\QuestionServiceImpl.java
 package org.example.qaservice.service.Impl;
 
 import com.mongodb.client.result.UpdateResult;
@@ -8,10 +7,13 @@ import org.apache.dubbo.config.annotation.DubboService;
 import org.bson.types.ObjectId;
 import org.example.aiservice.service.AiEvaluationService;
 import org.example.aiservice.service.AiEvaluationServiceForAw;
-import org.example.qaservice.entity.DTO.*; // 导入 DTO
+import org.example.qacommon.entity.Answer;
+import org.example.qacommon.entity.DTO.*;
+import org.example.qacommon.entity.DeletionResult;
+import org.example.qacommon.entity.Question;
+import org.example.qacommon.entity.User;
 import org.example.qaservice.repository.*;
 import org.example.qaservice.service.*;
-import org.example.qaservice.entity.*;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
