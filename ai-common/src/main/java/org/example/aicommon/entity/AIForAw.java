@@ -1,5 +1,5 @@
 // filepath: c:\Users\guoshenshen\Desktop\study\yyjg\class8\code\ai-service\src\main\java\org\example\aiservice\entity\AIForAw.java
-package org.example.aiservice.entity;
+package org.example.aicommon.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty; // 导入 JsonProperty
 import lombok.Data;

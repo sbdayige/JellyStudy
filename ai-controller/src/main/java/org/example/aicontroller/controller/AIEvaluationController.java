@@ -3,8 +3,8 @@ package org.example.aicontroller.controller;
 import java.util.List;
 
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.example.aiservice.entity.AIForAw;
-import org.example.aiservice.entity.AIForQa;
+import org.example.aicommon.entity.AIForAw;
+import org.example.aicommon.entity.AIForQa;
 import org.example.aiservice.service.AiEvaluationService;
 import org.example.aiservice.service.AiEvaluationServiceForAw;
 import org.springframework.http.HttpStatus;

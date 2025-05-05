@@ -3,7 +3,7 @@ package org.example.qacontroller.controller;
 import jakarta.validation.Valid; // 导入 Valid
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.bson.types.ObjectId;
-import org.example.aiservice.entity.AIForQa;
+import org.example.aicommon.entity.AIForQa;
 import org.example.aiservice.service.AiEvaluationService;
 import org.example.qacommon.entity.DTO.QuestionCreateDTO;
 import org.example.qacommon.entity.DTO.QuestionDetailsDTO;

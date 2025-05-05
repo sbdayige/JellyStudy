@@ -2,7 +2,7 @@ package org.example.qacontroller.controller;
 
 import jakarta.validation.Valid;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.example.aiservice.entity.AIForAw;
+import org.example.aicommon.entity.AIForAw;
 import org.example.aiservice.service.AiEvaluationServiceForAw;
 import org.example.qacommon.entity.DeletionResult;
 import org.example.qacommon.entity.Question;

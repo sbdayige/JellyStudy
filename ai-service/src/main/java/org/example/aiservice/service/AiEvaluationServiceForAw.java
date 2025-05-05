@@ -1,7 +1,7 @@
 // filepath: c:\Users\guoshenshen\Desktop\study\yyjg\class8\code\ai-service\src\main\java\org\example\aiservice\service\AiEvaluationServiceForAw.java
 package org.example.aiservice.service;
 
-import org.example.aiservice.entity.AIForAw;
+import org.example.aicommon.entity.AIForAw;
 import java.util.List; // 导入 List
 
 public interface AiEvaluationServiceForAw {

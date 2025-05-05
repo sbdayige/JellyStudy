@@ -1,4 +1,4 @@
-package org.example.aiservice.entity;
+package org.example.aicommon.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

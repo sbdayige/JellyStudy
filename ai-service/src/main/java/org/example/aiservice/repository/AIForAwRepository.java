@@ -1,6 +1,6 @@
 package org.example.aiservice.repository;
 
-import org.example.aiservice.entity.AIForAw;
+import org.example.aicommon.entity.AIForAw;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

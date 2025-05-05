@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.example.aiservice.entity.AIForAw;
+import org.example.aicommon.entity.AIForAw;
 import org.example.aiservice.repository.AIForAwRepository;
 import org.example.aiservice.service.AiEvaluationServiceForAw;
 import org.springframework.ai.chat.client.ChatClient;

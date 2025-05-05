@@ -1,7 +1,6 @@
 package org.example.aiservice.service;
 
-import org.example.aiservice.entity.AIForAw;
-import org.example.aiservice.entity.AIForQa;
+import org.example.aicommon.entity.AIForQa;
 
 public interface AiEvaluationService {
     AIForQa evaluateQuestion(String questionId, String content, String modelVersion);
