@@ -34,6 +34,7 @@
         <module>kg-controller</module>
         <module>ai-controller</module>
         <module>qa-common</module>
+        <module>kg-common</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

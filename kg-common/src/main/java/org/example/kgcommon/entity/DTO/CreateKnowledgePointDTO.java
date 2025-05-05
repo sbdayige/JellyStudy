@@ -1,11 +1,14 @@
-package org.example.kgservice.entity.DTO;
+package org.example.kgcommon.entity.DTO;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class CreateKnowledgePointDTO {
+public class CreateKnowledgePointDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     @NotBlank(message = "标题不能为空")
     @Size(min = 2, max = 50, message = "标题长度需在2-50字符之间")
     private String title;

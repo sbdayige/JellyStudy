@@ -1,7 +1,7 @@
 package org.example.qacommon.entity.DTO;
 
 import lombok.Data;
-import org.example.kgservice.entity.KnowledgePoint;
+import org.example.kgcommon.entity.KnowledgePoint;
 import java.io.Serializable;
 import java.util.List;
 

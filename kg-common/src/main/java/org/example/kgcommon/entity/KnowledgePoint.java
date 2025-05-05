@@ -1,4 +1,4 @@
-package org.example.kgservice.entity;
+package org.example.kgcommon.entity;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

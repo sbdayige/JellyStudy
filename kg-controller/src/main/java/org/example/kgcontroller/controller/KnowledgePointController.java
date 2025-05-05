@@ -2,18 +2,14 @@ package org.example.kgcontroller.controller;
 
 import jakarta.validation.Valid;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.example.kgservice.entity.DTO.CreateKnowledgePointDTO;
-import org.example.kgservice.entity.DTO.KnowledgePointResponseDTO;
-import org.example.kgservice.entity.ErrorResponse;
-import org.example.kgservice.entity.KnowledgePoint;
-import org.example.kgservice.service.Impl.KnowledgePointServiceImpl;
+import org.example.kgcommon.entity.DTO.CreateKnowledgePointDTO;
+import org.example.kgcommon.entity.DTO.KnowledgePointResponseDTO;
+import org.example.kgcommon.entity.ErrorResponse;
 import org.example.kgservice.service.KnowledgePointService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.List;
 
 
 @RestController

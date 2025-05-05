@@ -1,4 +1,4 @@
-package org.example.kgservice.entity;
+package org.example.kgcommon.entity;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;

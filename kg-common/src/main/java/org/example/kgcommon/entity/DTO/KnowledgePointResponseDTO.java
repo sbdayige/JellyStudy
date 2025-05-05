@@ -1,11 +1,14 @@
-package org.example.kgservice.entity.DTO;
+package org.example.kgcommon.entity.DTO;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-public class KnowledgePointResponseDTO {
+public class KnowledgePointResponseDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String id;
     private String title;
     private String category;

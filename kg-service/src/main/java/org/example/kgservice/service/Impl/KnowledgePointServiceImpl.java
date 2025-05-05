@@ -1,20 +1,15 @@
 package org.example.kgservice.service.Impl;
 
-
-
 import jakarta.validation.Valid;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.example.kgservice.entity.DTO.CreateKnowledgePointDTO;
-import org.example.kgservice.entity.DTO.KnowledgePointResponseDTO;
-import org.example.kgservice.entity.KnowledgePoint;
+import org.example.kgcommon.entity.DTO.CreateKnowledgePointDTO;
+import org.example.kgcommon.entity.DTO.KnowledgePointResponseDTO;
+import org.example.kgcommon.entity.KnowledgePoint;
 import org.example.kgservice.repository.KnowledgePointRepository;
 import org.example.kgservice.service.KnowledgePointService;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.List;
 
 @DubboService
 public class KnowledgePointServiceImpl implements KnowledgePointService {
