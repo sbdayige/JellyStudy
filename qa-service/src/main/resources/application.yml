@@ -2,14 +2,17 @@ logging:
   level:
     org.springframework.data.mongodb.core: DEBUG
 spring:
-    ai:
-      dashscope:
-        api-key: sk-4cfdb9dbbc8c47c48a47b93d43bc5dc6
-    data:
-      mongodb:
-        uri: mongodb://root:123456@localhost:17017/JellyStudy?authSource=admin
-        auditing:
-          enabled: true
+  application:
+    name: qa-service # 服务名称，保持不变
+  ai:
+    dashscope:
+      api-key: sk-4cfdb9dbbc8c47c48a47b93d43bc5dc6
+  data:
+    mongodb:
+      uri: mongodb://root:123456@localhost:17017/JellyStudy?authSource=admin
+    auditing:
+      enabled: true
+
 dubbo:
   application:
     name: dubbo-qa-service
@@ -18,9 +21,18 @@ dubbo:
     address: nacos://localhost:8848
   protocol:
     name: dubbo
-    port: 20880
+    port: 20880 # qa-service 的 Dubbo 端口，确保唯一
   consumer:
     check: false
     timeout: 3000
+
 server:
-  port: 8083
+  port: 8083 # qa-service 的 HTTP 端口，确保唯一
+management:
+  tracing:
+    enabled: true # 启用 Tracing
+    sampling:
+      probability: 1.0 # 设置采样率 (1.0 = 100%)
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411 # Zipkin 服务器接收 spans 的 API 地址

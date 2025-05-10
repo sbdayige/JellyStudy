@@ -2,12 +2,15 @@ logging:
   level:
     org.springframework.data.mongodb.core: DEBUG
 spring:
+  application:
+    name: qa-controller
   data:
     mongodb:
       uri: mongodb://root:123456@localhost:17017/JellyStudy?authSource=admin
   ai:
     dashscope:
       api-key: sk-4cfdb9dbbc8c47c48a47b93d43bc5dc6
+
 dubbo:
   application:
     name: dubbo-qa-controller
@@ -16,7 +19,28 @@ dubbo:
     address: nacos://localhost:8848
   protocol:
     name: dubbo
-    port: 20882
+    port: 20882 # qa-controller 的 Dubbo 端口，确保唯一
   consumer:
     check: false
     timeout: 10000
+management:
+  tracing:
+    enabled: true # 启用 Tracing
+    sampling:
+      probability: 1.0 # 设置采样率 (1.0 = 100%)
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411 # Zipkin 服务器接收 spans 的 API 地址
+
+# Swagger配置
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    tags-sorter: alpha
+    operations-sorter: alpha
+  show-actuator: false
+  packages-to-scan: org.example.qacontroller.controller

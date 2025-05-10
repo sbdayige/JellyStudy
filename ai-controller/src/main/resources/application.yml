@@ -20,11 +20,23 @@ dubbo:
     address: nacos://localhost:8848
   protocol:
     name: dubbo
-    port: 20883 
+    port: 20884
   consumer:
     check: false
-    timeout: 10000
-    retries: 0
+    timeout: 3000
 
 server:
-  port: 8085 
+  port: 8085
+
+# Swagger配置
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    tags-sorter: alpha
+    operations-sorter: alpha
+  show-actuator: false
+  packages-to-scan: org.example.aicontroller.controller

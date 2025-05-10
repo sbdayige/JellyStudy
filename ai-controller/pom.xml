@@ -58,9 +58,10 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>ai-common</artifactId>
+            <artifactId>qa-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

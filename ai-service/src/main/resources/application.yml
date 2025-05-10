@@ -15,9 +15,9 @@ dubbo:
     address: nacos://localhost:8848
   protocol:
     name: dubbo
-    port: 20884
+    port: 20890
   consumer:
     check: false
     timeout: 10000
 server:
-  port: 8084
+  port: 8081

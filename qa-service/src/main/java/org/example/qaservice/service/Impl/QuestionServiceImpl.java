@@ -36,22 +36,21 @@ import java.util.stream.Collectors;
 public class QuestionServiceImpl implements QuestionService {
 
     @DubboReference
-    private AiEvaluationService aiEvaluationService; // 用于问题评估
+    private AiEvaluationService aiEvaluationService;
     @DubboReference
-    private AiEvaluationServiceForAw aiEvaluationServiceForAw; // 用于回答评估
+    private AiEvaluationServiceForAw aiEvaluationServiceForAw;
 
     private final QuestionRepository repository;
     private final AnswerRepository answerRepository;
     private final CommentRepository commentRepository;
     private final UserServiceImpl userServiceImpl;
     private final HotScoreServiceImpl hotScoreServiceImpl;
-    private final AnswerServiceImpl answerServiceImpl; // 注意：循环依赖风险，确保设计合理
-    private final CommentServiceImpl commentServiceImpl; // 注意：循环依赖风险，确保设计合理
+    private final AnswerServiceImpl answerServiceImpl;
+    private final CommentServiceImpl commentServiceImpl;
     private final MongoTemplate mongoTemplate;
 
     private static final Logger log = LoggerFactory.getLogger(QuestionServiceImpl.class);
 
-    // 内部方法，获取实体
     @Override
     public Question findQuestionEntityById(String questionId) {
         try {
@@ -70,6 +69,7 @@ public class QuestionServiceImpl implements QuestionService {
     // 查询方法 - 返回 DTO
     @Override
     public QuestionResponseDTO getQuestionById(String questionId) {
+        log.info("Getting question by ID: {}", questionId);
         Question question = findQuestionEntityById(questionId);
         return convertToResponseDTO(question);
     }

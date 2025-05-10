@@ -2,12 +2,11 @@ logging:
   level:
     org.springframework.data.mongodb.core: DEBUG
 spring:
+  application:
+    name: kg-controller
   data:
     mongodb:
       uri: mongodb://root:123456@localhost:17017/JellyStudy?authSource=admin
-
-server:
-  port: 8081
 
 dubbo:
   application:
@@ -17,7 +16,23 @@ dubbo:
     address: nacos://localhost:8848
   protocol:
     name: dubbo
-    port: 20882
+    port: 20883
   consumer:
     check: false
     timeout: 3000
+
+server:
+  port: 8084
+
+# Swagger配置
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    tags-sorter: alpha
+    operations-sorter: alpha
+  show-actuator: false
+  packages-to-scan: org.example.kgcontroller.controller

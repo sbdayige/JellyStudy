@@ -84,8 +84,9 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId> <!-- 必需的网络组件 -->
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>ai-common</artifactId>

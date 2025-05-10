@@ -31,7 +31,6 @@ public class CommentServiceImpl implements CommentService {
     private final CommentRepository commentRepository;
     private final AnswerRepository answerRepository;
     private final MongoTemplate mongoTemplate;
-    private final UserServiceImpl userServiceImpl;
 
     private String extractQuestionId(String path) {
         return path.split("/")[2]; // /questions/{questionId}/...
